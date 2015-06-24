@@ -12,6 +12,8 @@ What you should know about JavaScript: Comprehensive JavaScript tips
   5. [Number](#number)
   6. [Object](#object)
     1. [A clean hash table](#a-clean-hash-table)
+  7. [Bitwise](#bitwise)
+  8. [IIFE](#iife)
   
 ## Array
 #### Truncate an array
@@ -87,5 +89,7 @@ Besides the literal object declaration, an object could also be created using `O
 var hashtable = Object.create(null);
 hashtable.hasOwnProperty; // undefined
 ```
+## Bitwise
+## IIFE
 ## License
 MIT
