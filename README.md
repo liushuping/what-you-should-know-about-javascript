@@ -6,7 +6,7 @@ What you should know about JavaScript: Comprehensive JavaScript tips
     1. [Truncate an array](#truncate-an-array)
     2. [Comma in array literal decaration](#comma-in-array-literal-declaration)
   2. [Class](#class)
-    1.[Robust class declaration](#robust-class-declaration)
+    1. [Robust class declaration](#robust-class-declaration)
   3. [String](#string)
   4. [Regex](#regex)
   5. [Number](#number)
