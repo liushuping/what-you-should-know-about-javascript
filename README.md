@@ -11,6 +11,7 @@ What you should know about JavaScript: Comprehensive JavaScript tips
   4. [Regex](#regex)
   5. [Number](#number)
   6. [Object](#object)
+    1. [A clean hash table](#a-clean-hash-table)
   
 ## Array
 #### Truncate an array
@@ -30,7 +31,7 @@ console.log(arr); //[1, 2, 3, 4]
 ```
 If there is no value or element between two commas, an `undefined` will be inserted there.
 ```javascript
-/* two adjacent commas generate an undefined value
+/* two adjacent commas generate an undefined value */
 var arr = [1, 2, , 3];
 console.log(arr); //[1, 2, undefined, 3]
 ```
@@ -74,5 +75,17 @@ But if the class accepts length varying parameters, we cannot simply pass the `a
 ## Regex
 ## Number
 ## Object
+#### A clean hash table
+By nature, a JavaScript object is a hash table, and we can use it for most scenarios. However, it is not clean because it has some predefined keys there and if there will be conflicts if your data has the same key.
+```javascript
+var hashtable = {}
+hashtable.hasOwnProperty; // function hasOwnProperty()
+```
+Besides the literal object declaration, an object could also be created using `Object` factory method.
+```javascript
+/* A definition of clean JavaScript hash table */
+var hashtable = Object.create(null);
+hashtable.hasOwnProperty; // undefined
+```
 ## License
 MIT
