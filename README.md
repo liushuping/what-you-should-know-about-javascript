@@ -12,6 +12,7 @@ What you should know about JavaScript: Comprehensive JavaScript tips
   5. [Number](#number)
   6. [Object](#object)
     1. [A clean hash table](#a-clean-hash-table)
+    2. [Read-only property](#read-only-property)
   7. [Bitwise](#bitwise)
   8. [IIFE](#iife)
   
@@ -88,6 +89,21 @@ Besides the literal object declaration, an object could also be created using `O
 /* A definition of clean JavaScript hash table */
 var hashtable = Object.create(null);
 hashtable.hasOwnProperty; // undefined
+```
+
+#### Read-only property
+A property defined using `this.some_property` or using object notation is write-able. But to define a read-only property, we can use `Object.defineProperty` method to achieve it.
+```javascript
+var obj = {};
+Object.defineProperty(obj, 'name', {
+    get: function() {
+        return 'abc';
+    }
+});
+
+console.log(obj.name); // 'abc'
+obj.name = 123;
+console.log(obj.name); // 'abc'
 ```
 ## Bitwise
 ## IIFE
