@@ -15,6 +15,7 @@ What you should know about JavaScript: Comprehensive JavaScript tips
     2. [Read-only property](#read-only-property)
   7. [Bitwise](#bitwise)
     1. [Zero-fill right shift](#zero-fill-right-shift)
+    2. [Get integral part of a decimal number](#get-integral-part-of-a-decimal-number)
   8. [IIFE](#iife)
   
 ## Array
@@ -123,6 +124,15 @@ Zero-fill right shift enables an interesting feature - output the actual binary 
 But use `>>>` operator to change the sign bit to `0` then we can output the actual binary representation for a negative number.
 ```javascript
 (-5>>>0).toString(2); // "11111111111111111111111111111011"
+```
+
+#### Get integral part of a decimal number
+In addition to the `parseInt` function to get the integral part of a number, but `>>` and `<<` operators can also be used to get the integral part of a decimal number.
+```javascript
+123 << 0; // 123
+123.456 << 0; // 123
+123.456 >> 0; // 123
+-456.789 >> 0; // -456
 ```
 ## IIFE
 There are various forms of Immediately-Invoked Function Expressions, and 2 mostly used froms are
