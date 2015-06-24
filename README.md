@@ -5,6 +5,9 @@ What you should know about JavaScript: Comprehensive JavaScript tips
   1. [Array](#array)
     1. [Truncate an array](#truncate-an-array)
     2. [Comma in array literal decaration](#comma-in-array-literal-declaration)
+    3. [Array is a stack](#array-is-a-stack)
+    4. [Array is a queue](#array-is-a-queue)
+    5. [Array is a vector](#array-is-a-vector)
   2. [Class](#class)
     1. [Robust class declaration](#robust-class-declaration)
   3. [String](#string)
@@ -40,6 +43,10 @@ If there is no value or element between two commas, an `undefined` will be inser
 var arr = [1, 2, , 3];
 console.log(arr); //[1, 2, undefined, 3]
 ```
+
+#### Array is a stack
+#### Array is a queue
+#### Array is a vector
 
 ## Class
 #### Robust class declaration
