@@ -3,6 +3,8 @@ What you should know about JavaScript: Comprehensive JavaScript tips
 
 ## Table Of Contents
   1. [Array](#array)
+    1. [Truncate an array](#truncate-an-array)
+    2. [Comma in array literal decaration](#comma-in-array-literal-declaration)
   2. [Class](#class)
   3. [String](#string)
   4. [Regex](#regex)
