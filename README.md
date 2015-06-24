@@ -14,6 +14,7 @@ What you should know about JavaScript: Comprehensive JavaScript tips
     1. [A clean hash table](#a-clean-hash-table)
     2. [Read-only property](#read-only-property)
   7. [Bitwise](#bitwise)
+    1. [Zero-fill right shift](#zero-fill-right-shift)
   8. [IIFE](#iife)
   
 ## Array
@@ -106,6 +107,23 @@ obj.name = 123;
 console.log(obj.name); // 'abc'
 ```
 ## Bitwise
+#### Zero-fill right shift
+The right shift operator `>>` does not change the sign bit of a number, but zero-fill right shift operator can be used to change a negative number into a positive number.
+```javascript
+/* 5: 101 (base 2, without sign bit: 0)
+   -5: 11111111111111111111111111111011 (base 2, without sign bit: 1)
+   4294967291: 11111111111111111111111111111011 (base 2, without sign bit: 0
+*/
+-5 >>> 0; // 4294967291
+```
+Zero-fill right shift enables an interesting feature - output the actual binary representation for a negative number: complement code. With the `Number.prototype.toString(2)` method, we could not get the actual binary representation for a negative number.
+```javascript
+(-5).toString(2); // "-101"
+```
+But use `>>>` operator to change the sign bit to `0` then we can output the actual binary representation for a negative number.
+```javascript
+(-5>>>0).toString(2); // "11111111111111111111111111111011"
+```
 ## IIFE
 There are various forms of Immediately-Invoked Function Expressions, and 2 mostly used froms are
 ```javascript
