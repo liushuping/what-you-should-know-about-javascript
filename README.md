@@ -16,10 +16,11 @@ What you should know about JavaScript: Comprehensive JavaScript tips
   6. [Object](#object)
     1. [A clean hash table](#a-clean-hash-table)
     2. [Read-only property](#read-only-property)
-  7. [Bitwise](#bitwise)
+  7. [Function](#function)
+  8. [Bitwise](#bitwise)
     1. [Zero-fill right shift](#zero-fill-right-shift)
     2. [Get integral part of a decimal number](#get-integral-part-of-a-decimal-number)
-  8. [IIFE](#iife)
+  9. [IIFE](#iife)
   
 ## Array
 #### Truncate an array
@@ -114,6 +115,10 @@ console.log(obj.name); // 'abc'
 obj.name = 123;
 console.log(obj.name); // 'abc'
 ```
+
+## Function
+
+
 ## Bitwise
 #### Zero-fill right shift
 The right shift operator `>>` does not change the sign bit of a number, but zero-fill right shift operator can be used to change a negative number into a positive number.
