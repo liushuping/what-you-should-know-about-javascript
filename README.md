@@ -107,5 +107,36 @@ console.log(obj.name); // 'abc'
 ```
 ## Bitwise
 ## IIFE
+There are various forms of Immediately-Invoked Function Expressions, and 2 mostly used froms are
+```javascript
+/* form 1 */
+(function() {
+    // code
+})();
+
+/* form 2 */
+(function() {
+    // code
+}());
+```
+but if you don't care about the function return value, there are manay other forms
+```javascript
+/* form 3 */
+!function() {
+    // code
+}();
+
+/* form 4 */
+~function() {
+    // code
+}();
+
+/* form 5 */
+void function() {
+    // code
+}();
+
+/* and more ... */
+```
 ## License
 MIT
