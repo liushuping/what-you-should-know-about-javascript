@@ -21,6 +21,7 @@ What you should know about JavaScript: Comprehensive JavaScript tips
     1. [Zero-fill right shift](#zero-fill-right-shift)
     2. [Get integral part of a decimal number](#get-integral-part-of-a-decimal-number)
   9. [IIFE](#iife)
+  10. Miscs (#miscs)
   
 ## Array
 #### Truncate an array
@@ -178,5 +179,13 @@ void function() {
 
 /* and more ... */
 ```
+
+## Miscs
+#### undefined and void 0
+`void 0` equals to `undefined`, so you may find source code uses `void 0` to detect whether whether a variable is defined or not.
+
+#### !0 and !1
+For code minimizing purpose, `!0` and `!1` are often be used to replace `true` and `false`
+
 ## License
 MIT
