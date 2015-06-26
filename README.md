@@ -22,6 +22,8 @@ What you should know about JavaScript: Comprehensive JavaScript tips
     2. [Get integral part of a decimal number](#get-integral-part-of-a-decimal-number)
   9. [IIFE](#iife)
   10. Miscs (#miscs)
+    1. [undefined and void 0](#undefined-and-void-0)
+    2. [!0 and !1](#0-and-1)
   
 ## Array
 #### Truncate an array
