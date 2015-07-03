@@ -11,6 +11,10 @@ What you should know about JavaScript: Comprehensive JavaScript tips
   2. [Class](#class)
     1. [Robust class declaration](#robust-class-declaration)
   3. [String](#string)
+    1. [Encoded in UTF32](#encoded-in-utf32)
+  4. [Date](#date)
+    1. [Month and Date](#month-and-date)
+    2. [Timezone offset](#timezone-offset)
   4. [Regex](#regex)
   5. [Number](#number)
   6. [Object](#object)
@@ -88,6 +92,21 @@ function Customer(name) {
 But if the class accepts length varying parameters, we cannot simply pass the `arguments` parameter to the internal class instantiation statement, but need handle it element by element.
 
 ## String
+#### Encoded in UTF32
+JavaScript string is encoded in UTF32, so it supports the whole set of unicode characters.
+
+## Date
+#### Month and date
+JavaScript month starts from 0, but JavaScript date starts from 1.
+```javascript
+var x = new Date();
+x.getMonth(); // starts from 0;
+x.getDate(); // starts from 1;
+```
+
+#### Timezone offset
+JavaScript `Date` object calculates (`getTimezoneOffset()`) by substracting local time from UTC time. So if local time zone is positive the result will be negative.
+
 ## Regex
 ## Number
 ## Object
